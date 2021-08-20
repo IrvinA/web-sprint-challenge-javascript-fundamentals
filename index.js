@@ -224,6 +224,13 @@ class CubeMaker extends CuboidMakerTwo{
   constructor(atrs){
     super(atrs);
   }
+  cube(){
+    if(this.length === this.width && this.length === this.height){
+      return `I am a cube, equal lengths and equal sides!`
+    }else{
+      return `I am not a cube, but im glad to be this box, no matter the shape!`
+    }
+  }
 }
 
 const cuboidTwo = new CuboidMakerTwo({
