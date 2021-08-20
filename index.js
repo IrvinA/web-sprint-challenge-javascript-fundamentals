@@ -64,9 +64,7 @@ const zooAnimals = [
 
   function animalNames(array){
     const displayNames = [];
-    array.forEach(function(element){
-      return displayNames.push(`name: ${element.animal_name}, scientific: ${element.scientific_name}`);
-    });
+    array.forEach(element => displayNames.push(`name: ${element.animal_name}, scientific: ${element.scientific_name}`));
     return displayNames;
   }
   
@@ -79,9 +77,7 @@ const zooAnimals = [
   */
 
   function lowerCaseNames(array){
-    const lowerCase = array.map(function(item){
-      return item.animal_name.toLowerCase();
-    });
+    const lowerCase = array.map(item => item.animal_name.toLowerCase());
     return lowerCase;
   }
   
@@ -93,9 +89,7 @@ const zooAnimals = [
   */
 
   function lowPopulationAnimals(array){
-    const lowPops = array.filter(function(item){
-      return item.population < 5;
-    });
+    const lowPops = array.filter(item => item.population < 5);
     return lowPops;
   }
   
@@ -108,9 +102,7 @@ const zooAnimals = [
   */
 
   function USApop(array){
-    const usaPop = array.reduce(function(acc, item){
-      return acc + item.population;
-    }, 0);
+    const usaPop = array.reduce((acc, item) => acc + item.population, 0);
     return usaPop;
   }
   
@@ -225,6 +217,12 @@ class CuboidMakerTwo{
   }
   surfaceArea(){
     return 2 * (this.length * this.width + this.length * this.height + this.width * this.height);
+  }
+}
+
+class CubeMaker extends CuboidMakerTwo{
+  constructor(atrs){
+    super(atrs);
   }
 }
 
