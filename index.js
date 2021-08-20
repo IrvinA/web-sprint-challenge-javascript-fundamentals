@@ -16,7 +16,7 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+//nestedFunction is an internal function and is therefor able to reach up to the const internal because it resides within the same outer function and thusly creates a closure.
 
 
 
@@ -28,10 +28,16 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
-
+function summation(number) {
+  if((number/2) % 1 === 0){
+    return ((number + 1) * (number / 2));
+  }else{
+    return ((number + 1) * ((number / 2) - 0.5)) + ((number / 2) + 0.5);
   }
+}
+
+console.log(summation(12));
+console.log(summation(13));
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
