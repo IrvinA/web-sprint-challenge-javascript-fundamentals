@@ -24,15 +24,31 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
-1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
+1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each.
+
+.map is a function that is best used to convert data. It requires a return statement and returns a new array without interfering with the original array. 
+.reduce is a function that returns a single value and is primarily used for multiplication or addition purposes.  
+.filter is a function returns data in a new array based on whether the data meets the return statement conditions. Data that meets the conditions will be made True and included in the array. Data that is false will not be.
 
 2. Explain the difference between a callback and a higher order function.
 
+A higher order function is a function that takes another function as an argument. The callback function is the function that is passed into a higher order function that retains its functionality.
+
 3. Explain what a closure is.
+
+A closure is what happens when an inner function reaches for a value from an outer function.
 
 4. Describe the four principles of the 'this' keyword.
 
+The 4 principles of this are:
+Window binding, which is essentially an error where this refers to the global window or undefined in strict mode.
+Implicit binding, which is where this is implied to be whatever is to the left of the dot.
+Explicit binding, which is where this is explicitly assigned to a value through the use of .apply, .bind, & .call.
+And the last one is new binding where this refers to the new object that is created through a constructor function.
+
 5. Why do we need super() in an extended class?
+
+super() in an extended class is essential because it replace the .call function needed to link a child to a parent function.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
